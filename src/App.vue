@@ -1,19 +1,10 @@
 <template>
   <div id="app">
     <h1>Todo application</h1>
-    <TodoList />
+    <hr />
+    <router-view />
   </div>
 </template>
-
-<script>
-import TodoList from "./components/TodoList";
-export default {
-  name: "App",
-  components: {
-    TodoList,
-  },
-};
-</script>
 
 <style>
 #app {
@@ -23,5 +14,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 70%;
+  margin: 0 auto;
 }
 </style>
